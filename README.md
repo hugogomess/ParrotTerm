@@ -30,7 +30,3 @@ Add `zgen load KorvinSilver/blokkzh` to your `.zshrc` file in the same function 
 ### xterm
 
 <img src="preview.png">
-
-### tty
-
-<img src="preview-tty.png">
