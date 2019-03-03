@@ -2,9 +2,10 @@
 
 # ZSH theme downloader
 # Usage:
-#       ./blokkzh-download.zsh $ZSH_CUSTOM
+#       ./ParrotTerm-downloader.zsh $ZSH_CUSTOM
 
 # Check if $ZSH_CUSTOM exists
+
 if [[ ! -d $1 ]];
 then
     echo "You don't have a \$ZSH_CUSTOM variable"
@@ -21,6 +22,7 @@ then
 fi
 
 # Check if $ZSH_CUSTOM is writable and download theme file if it is
+
 if [[ ! -w $1 ]];
 then
     echo "You don't have write permission to $1"
@@ -29,14 +31,14 @@ then
     echo ""
 else
     mkdir -p $1/themes
-    curl -o "$1/themes/blokkzh.zsh-theme" "https://raw.githubusercontent.com/KorvinSilver/blokkzh/master/blokkzh.zsh-theme"
+    curl -o "$1/themes/ParrotTerm.zsh-theme" "https://raw.githubusercontent.com/Eshaan7/ParrotTerm/master/ParrotTerm.zsh-theme"
 fi
 
 # Download theme using sudo or exit
 if [[ $keyInpt == "y" || $keyInpt == "Y" ]];
 then
     sudo mkdir -p $1/themes
-    sudo curl -o "$1/themes/blokkzh.zsh-theme" "https://raw.githubusercontent.com/KorvinSilver/blokkzh/master/blokkzh.zsh-theme"
+    sudo curl -o "$1/themes/ParrotTerm.zsh-theme" "https://raw.githubusercontent.com/Eshaan7/ParrotTerm/master/ParrotTerm.zsh-theme"
 else
     if (( ${+keyInpt} ));
     then
@@ -46,7 +48,7 @@ else
 fi
 
 # Exit if the theme file didn't get downloaded
-if [[ ! -f "$1/themes/blokkzh.zsh-theme" ]];
+if [[ ! -f "$1/themes/ParrotTerm.zsh-theme" ]];
 then
     echo "Something went wrong..."
     echo "Exiting..."
@@ -59,7 +61,7 @@ cp $HOME/.zshrc $zshrc_bak
 echo "Backup file $zshrc_bak created"
 
 # Update .zshrc
-sed -e "s/ZSH_THEME.*/ZSH_THEME=\"blokkzh\"/g" $zshrc_bak > $HOME/.zshrc
+sed -e "s/ZSH_THEME.*/ZSH_THEME=\"ParrotTerm\"/g" $zshrc_bak > $HOME/.zshrc
 echo "$HOME/.zshrc updated"
 
 exit

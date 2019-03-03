@@ -13,7 +13,7 @@ To install, follow [these instructions](https://github.com/robbyrussell/oh-my-zs
 You can also use the [blokkzh-downloader](https://github.com/KorvinSilver/blokkzh/blob/master/blokkzh-downloader.zsh) script included in this repo.
 
 Alternatively, you can execute this command:
-`curl -O https://raw.githubusercontent.com/KorvinSilver/blokkzh/master/blokkzh-downloader.zsh && zsh ParrotTerm-downloader.zsh $ZSH_CUSTOM && rm ParrotTerm-downloader.zsh`
+`curl -O https://raw.githubusercontent.com/Eshaan7/ParrotTerm/master/ParrotTerm-downloader.zsh && zsh ParrotTerm-downloader.zsh $ZSH_CUSTOM && rm ParrotTerm-downloader.zsh`
 
 
 ## Screenshots
