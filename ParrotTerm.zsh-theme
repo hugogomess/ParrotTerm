@@ -1,5 +1,5 @@
-# ZSH Theme - Preview: https://raw.githubusercontent.com/KorvinSilver/blokkzh/master/preview.png
-# Mod of the gnzh theme
+# ZSH Theme - Preview: https://raw.githubusercontent.com/Eshaan7/ParrotTerm/master/preview.png
+# Mod of the gnzh theme and blokkzh theme
 
 setopt prompt_subst
 
